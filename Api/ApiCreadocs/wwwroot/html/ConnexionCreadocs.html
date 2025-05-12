@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Connexion créadocs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style/styleCreadocs.css" />
+</head>
+<body>
+    <div id="conteneurInscription">
+        <header id="headerInscription">
+            <img id="logo" src="images/LOGO.svg" />
+        </header>
+        <main id="mainInscription" class="mainConnexion">
+            <div id="conteneurCentral" class="conteneurCentralConnexion">
+                <form id="connexion" name="connexion" method="post">
+                    <h2 class="niveauH2 centreTexte paddingTop couleurGrisFort">Connexion<span class="couleurRouge">.</span></h2>
+                    <h4 class="niveauH4 centreTexte couleurGrisFort">Adresse mail ou identifiant :</h4>
+                    <input id="Email" type="text" name="Email" class="champTexteConnection" />
+                    <h4 class="niveauH4 centreTexte couleurGrisFort">Mot de passe :</h4>
+                    <input id="Password" type="text" name="Password" class="champTexteConnection" />
+
+                    <input id="boutonSuivant " type="submit" value="Se connecter" class="boutonSuivantConnection" />
+
+                    <fieldset class="fieldset">
+                        <legend class="legend couleurGrisFort">Ou alors !</legend>
+                        <p class="paragraphe couleurGrisFort">Vous n'avez pas de compte?</p>
+                        <a class="paragrapheWhite" href="InscriptionCreadocs.html">S'inscrire'</a>
+                    </fieldset>
+                    <!--<h3 id="texteOngletUtilConnect"></h3>-->
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script/connexion.js"></script>
+</body>
+</html>

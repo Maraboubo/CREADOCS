@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Accueil créadocs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style/styleCreadocs.css">
+</head>
+<body>
+    <div id="conteneurGlobal" class="conteneurGlobal">
+        <header name="headerGlobal">
+            <div name="headerTitres" class="headerTitres">
+                <div name="logo" class="logo">
+                    <img src="Images/Logo.svg" class="logoTitre"/>
+                </div>
+                <div name="titre" class="titre">
+                    <img  src="Images/Titre.svg" class="logoTitre"/>
+                </div>
+            </div>
+            <div name="headerMenu" class="conteneurMenu">
+                <a id="boutonConnexion" name="BoutonConnexion" class="boutonConnexion cliquable" href="ConnexionCreadocs.html">
+                    <h3 class="texteOngletMenu">Se connecter</h3>
+                </a>
+                <a id="boutonInscription" name="BoutonInscription" class="boutonInscription cliquable" href="InscriptionCreadocs.html">
+                    <h3 class="texteOngletMenu" id="texteOngletInscription">S'inscrire</h3>
+                </a>
+                <div id="boutonUtilConnect" name="BoutonUtilConnect" class="boutonUtilisateurConnecte" href="">
+                    <h3 class="texteOngletMenu couleurBlanc" id="texteOngletUtilConnect"></h3>
+                </div>
+                <a id="boutonDeconnexion" name="boutonDeconnexion" class="boutonDeconnexion cliquable">
+                    <h3 class="texteOngletMenu" id="texteDeconnexion">Se déconnecter</h3>
+                </a>
+            </div>
+        </header>
+        <div name="zone de travail" class="zoneDeTravail">
+            <a name="interfaceUn" id="interfaceUn" class="interfaces cliquable">
+                <div name="titreAssurance" class="BandeauInterface">
+                    <h3 class="titreInterface">Creer un contrat d'assurance</h3>
+                </div>
+                <img src="Images/assurance.png" class="ImageInterface">
+            </a>
+            <a name="interfaceDeux" id="interfaceDeux" href="AssuranceCreadocs.html" class="interfaces cliquable">
+                <div name="titreSim" class="BandeauInterface">
+                    <h3 class="titreInterface">Creer un contrat de carte SIM</h3>
+                </div>
+                <img src="Images/carteSim.png" class="ImageInterface">
+            </a>
+            <a name="interfaceTrois" id="interfaceTrois" href="AssuranceCreadocs.html" class="interfaces cliquable">
+                <div name="titreCarteBancaire" class="BandeauInterface">
+                    <h3 class="titreInterface">Creer un contrat de carte bancaire</h3>
+                </div>
+                <img src="Images/carteBancaire.png" class="ImageInterface">
+            </a>
+            <a name="interfaceQuatre" id="interfaceQuatre" href="AssuranceCreadocs.html" class="interfaces cliquable">
+                <div name="titreCarteBancaire" class="BandeauInterface">
+                    <h3 class="titreInterface">Creer un contrat de mutuelle</h3>
+                </div>
+                <img src="Images/mutuelle.png" class="ImageInterface">
+            </a>
+        </div>
+    </div>
+    <script src="script/accueil.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\AccueilCreadocs.html",
+      "PackagePath": "staticwebassets\\html\\AccueilCreadocs.html"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\AssuranceCreadocs.html",
+      "PackagePath": "staticwebassets\\html\\AssuranceCreadocs.html"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\ConnexionCreadocs.html",
+      "PackagePath": "staticwebassets\\html\\ConnexionCreadocs.html"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\Images\\Logo.svg",
+      "PackagePath": "staticwebassets\\html\\Images\\Logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\Images\\Rectangle.png",
+      "PackagePath": "staticwebassets\\html\\Images\\Rectangle.png"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\Images\\Titre.svg",
+      "PackagePath": "staticwebassets\\html\\Images\\Titre.svg"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\Images\\assurance.png",
+      "PackagePath": "staticwebassets\\html\\Images\\assurance.png"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\Images\\carteBancaire.png",
+      "PackagePath": "staticwebassets\\html\\Images\\carteBancaire.png"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\Images\\carteSim.png",
+      "PackagePath": "staticwebassets\\html\\Images\\carteSim.png"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\Images\\mutuelle.png",
+      "PackagePath": "staticwebassets\\html\\Images\\mutuelle.png"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\InscriptionCreadocs.html",
+      "PackagePath": "staticwebassets\\html\\InscriptionCreadocs.html"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\script\\accueil.js",
+      "PackagePath": "staticwebassets\\html\\script\\accueil.js"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\script\\assurance.js",
+      "PackagePath": "staticwebassets\\html\\script\\assurance.js"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\script\\connexion.js",
+      "PackagePath": "staticwebassets\\html\\script\\connexion.js"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\script\\inscription.js",
+      "PackagePath": "staticwebassets\\html\\script\\inscription.js"
+    },
+    {
+      "Id": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\html\\style\\styleCreadocs.css",
+      "PackagePath": "staticwebassets\\html\\style\\styleCreadocs.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ApiCreadocs.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ApiCreadocs.props",
+      "PackagePath": "build\\ApiCreadocs.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ApiCreadocs.props",
+      "PackagePath": "buildMultiTargeting\\ApiCreadocs.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ApiCreadocs.props",
+      "PackagePath": "buildTransitive\\ApiCreadocs.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

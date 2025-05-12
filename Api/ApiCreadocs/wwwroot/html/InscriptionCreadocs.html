@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Inscription Créadocs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style/styleCreadocs.css">
+</head>
+<body>
+    <div id="conteneurInscription">
+        <header id="headerInscription">
+            <img id="logo" src="images/LOGO.svg" />
+        </header>
+        <main id="mainInscription" class="mainInscription">
+            <form id="inscription" method="post" action="">
+                <!--Inscription Page1-->
+                <div id="conteneurInscription1" class="conteneurCentral">
+                    <h1 class="couleurGrisFort">Je<br />m'inscris<span class="couleurRouge">.</span></h1>
+                    <h4 id="adresseMail" class="niveauH4 couleurGrisMedium">Adresse mail :</h4>
+                    <input id="mailInter" type="email" name="mailInter" value="nom@domaine.com" class="champTexte" maxlength="50" />
+                    <input id="boutonSuivantP1" type="button" onclick="" value="suivant" class="boutonSuivant" />
+                    <fieldset class="fieldsetInscription">
+                        <legend class="legend couleurGrisMedium">Ou alors !</legend>
+                        <p class="paragraphe couleurGrisMedium">Vous avez déja un compte?</p>
+                        <a class="paragrapheWhite" href="ConnexionCreadocs.html">connectez vous.</a>
+                    </fieldset>
+                </div>
+                <!--Inscription Page2-->
+                <div id="conteneurInscription2" class="conteneurCentral">
+                    <h2 class="niveauH2 couleurGrisFort"><span id="flecheRetour1" class="couleurRouge textePlus cliquable">< </span>Etapes 1 / 2</h2>
+                    <h4 class="niveauH4 couleurGrisMedium">Creez votre mot de passe</h4>
+                    <input id="mdpInter" type="text" name="mdpInter" class="champTexte" maxlength="50" onchange="validateMdp(this)" />
+                    <h4 class="niveauH4 couleurGrisMedium">Votre mot de passe doit <br />comporter au moins:</h4>
+                    <ul>
+                        <li class="elementsListe">Une lettre</li>
+                        <li class="elementsListe">Un chiffre</li>
+                        <li class="elementsListe">10 caractères</li>
+                    </ul>
+                    <input id="boutonSuivantP2" type="button" value="suivant" class="boutonSuivant" />
+                </div>
+                <!--Inscription Page3-->
+                <div id="conteneurInscription3" class="conteneurCentral">
+                    <h2 class="niveauH2 couleurGrisFort"><span id="flecheRetour2" class="couleurRouge textePlus cliquable">< </span>Etapes 2 / 2</h2>
+                    <h4 class="niveauH4">Entrez votre nom.</h4>
+                    <input id="nomInter" type="text" name="nomInter" maxlength="20" />
+                    <h4 class="niveauH4">Prénom.</h4>
+                    <input id="prenomInter" type="text" name="prenomInter" maxlength="20" />
+                    <h4 class="niveauH4">Créez votre identifiant.</h4>
+                    <input id="loginInter" type="text" name="loginInter" maxlength="25" />
+                    <h4 class="niveauH4">Numéro de téléphone.</h4>
+                    <input id="telInter" type="tel" name="telInter" class="champTexte" maxlength="50" />
+                    <h4 class="niveauH4">Agence.</h4>
+                    <select id="id_agence" name="id_agence" class="champTexte">
+                        <option value=1>Sélectionnez une agence.</option>
+                        <!-- Les options seront ajoutées dynamiquement ici -->
+                    </select>
+                    <h4 class="niveauH4">Fonction.</h4>
+                    <select id="id_titre" name="id_titre" class="champTexte">
+                        <option value=1>Veuillez renseigner votre fonction.</option>
+                        <!-- Les options seront ajoutées dynamiquement ici -->
+                    </select>
+                    <input id="boutonSubmit" type="button" onclick="" value="Envoyer" class="boutonSuivant" />
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="script/inscription.js"></script>
+</body>
+</html>

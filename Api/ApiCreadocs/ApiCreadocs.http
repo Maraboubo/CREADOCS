@@ -1,0 +1,436 @@
+﻿@ApiCreadocs_HostAddress = https://localhost:44338
+
+GET {{ApiCreadocs_HostAddress}}/api/interlocuteur
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/interlocuteur
+Content-Type: application/json
+
+{
+    "id_titre": 1,
+    "id_agence": 3,
+    "loginInter": "unnouveaulogin",
+    "mdpInter": "lepasswordneuf",
+    "loginKwInter": "l",
+    "mdpKwInter": "l",
+    "nomInter": "util4",
+    "prenomInter": "deux",
+    "telInter": "0123456789",
+    "mailInter": "util@neuf.com"
+}
+
+###
+
+GET {{ApiCreadocs_HostAddress}}/api/interlocuteur/2
+
+###
+
+DELETE {{ApiCreadocs_HostAddress}}/api/interlocuteur/7
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/interlocuteur
+Content-Type: application/json
+
+{
+    "mailInter": "m.soleri@unemail.com",
+    "mdpInter": "unpassword",
+    "nomInter": "SOLERI",
+    "prenomInter": "Mathieu",
+    "loginInter": "mSoleri"   
+}
+
+###
+
+GET {{ApiCreadocs_HostAddress}}/api/agence
+
+###
+
+//Test de Login avec login et MDP valide
+POST {{ApiCreadocs_HostAddress}}/api/interlocuteur/login
+Content-Type: application/json
+
+{
+    "Email": "p.martin@agencecentrale.com",
+    "Password": "password123" 
+}
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/interlocuteur/login
+Content-Type: application/json
+
+{
+    "Email": "s.durand@agencenord.com",
+    "Password": "password123" 
+}
+
+###
+//Test de Login avec login et MDP erroné
+POST {{ApiCreadocs_HostAddress}}/api/interlocuteur/login
+Content-Type: application/json
+
+{
+    "Email": "s.drand@agrd.com",
+    "Password": "pass23" 
+}
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/interlocuteur
+Content-Type: application/json
+
+{
+    "id_titre": 1,
+    "id_agence": 1,
+    "loginInter": "UnePersonne",
+    "mdpInter": "leMotDePasse",
+    "loginKwInter": "l",
+    "mdpKwInter": "K",
+    "nomInter": "Mister",
+    "prenomInter": "Mathieu",
+    "telInter": "0123456789",
+    "mailInter": "misterMat@uneadresse.com"
+}
+
+###
+
+GET {{ApiCreadocs_HostAddress}}/api/sexe
+
+###
+
+GET {{ApiCreadocs_HostAddress}}/api/secu
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/client
+Content-Type: application/json
+
+{
+    "Client": {
+        "id_sexe": "1",
+        "id_ville": "0",
+        "id_regimeSecu": null,
+        "nomCli": "claude",
+        "prenomCli": "claude",
+        "numIdCli": "01456789568",
+        "telCli": "01456789568",
+        "mailCli": "jn.du@example.com",
+        "depNaIssCli": null,
+        "dateNaissCli": "1980-01-01",
+        "add1Cli": "1 rue  la Paix",
+        "add2Cli": null,
+        "add3Cli": null,
+        "numCompteCli": "FR71234546598765",
+        "numSecuCli": "123456765490123"
+    },
+    "postalCode": "76001",
+    "placeName": "guingamp",
+    "countryCode": "FR",
+    "countryName": "France"
+}
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/client
+Content-Type: application/json
+
+{
+  "Client":
+    {
+      "id_sexe":"1",
+      "id_ville":0,
+      "id_regimeSecu":"1",
+      "nomCli":"MEYRAN",
+      "prenomCli":"Jean",
+      "numIdCli":"654987369852dfgsdfg",
+      "dateNaissCli":"1985-02-01",
+      "depNaissCli":"66",
+      "add1Cli":"La",
+      "add2Cli":"Rue",
+      "add3Cli":"LEPIC"
+    },
+  "postalCode":"75220",
+  "placeName":"Paris 16",
+  "countryCode":"FR",
+  "countryName":"France"
+}
+
+###
+
+    
+    
+
+GET {{ApiCreadocs_HostAddress}}/api/assurance
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/contrat
+Content-Type: application/json
+
+{
+  "id_typContr" : "2",
+  "id_inter" : "6",
+  "id_Cli" : 1,
+  "id_Assu" : 1,
+  "dateContr" : "2024-07-15",
+  "dateDebutContr" : "2024-08-15",
+  "dateFinContr" : "2025-08-15"
+}
+
+###
+
+GET {{ApiCreadocs_HostAddress}}/api/contrat
+
+###
+
+GET {{ApiCreadocs_HostAddress}}/api/contrat/1
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/proxy/proxy
+Content-Type: application/json
+
+{
+  "Assurance": {
+"Interlocuteur":
+	{
+	"nomInter":"SOLERI",
+	"prenomInter":"Mathieu",
+	"telInter":"06.26.26.26.26",
+	"mailInter":"nouveaumathieusoleri@domaine.com"
+	},
+"Client":
+	{
+	"nomCli":"DEAN",
+	"prenomCli":"James",
+	"add1Cli":"Rue des Abeilles",
+	"add2Cli":".",
+	"add3Cli":".",
+	"postalCode":"05400",
+	"placeName":"Châteauneuf-d'Oze",
+	"countryName":"France"
+	},
+"Contrat":
+	{
+	"id_Contr":"11",
+	"nomAssu":"Assurance Auto",
+	"dateContr":"2024-07-16T00:00:00",
+	"dateDebutContr":"2024-08-16T00:00:00"
+	},
+"Echeances":
+	{
+	"valeurMois1":"70",
+	"dateEcheance1":"2024-08-16",
+	"valeurMois2":"70",
+	"dateEcheance2":"2024-09-16",
+	"valeurMois3":"70",
+	"dateEcheance3":"2024-10-16",
+	"valeurMois4":"70",
+	"dateEcheance4":"2024-11-16",
+	"valeurMois5":"70",
+	"dateEcheance5":"2024-12-16",
+	"valeurMois6":"70",
+	"dateEcheance6":"2025-01-16",
+	"valeurMois7":"70",
+	"dateEcheance7":"2025-02-16",
+	"valeurMois8":"70",
+	"dateEcheance8":"2025-03-16",
+	"valeurMois9":"70",
+	"dateEcheance9":"2025-04-16",
+	"valeurMois10":"70",
+	"dateEcheance10":"2025-05-16",
+	"valeurMois11":"70",
+	"dateEcheance11":"2025-06-16",
+	"valeurMois12":"70",
+	"dateEcheance12":"2025-07-16"
+	}
+  }
+}
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/proxy/proxy
+Content-Type: application/json
+
+{
+  //RequeteProxy
+}
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/proxy/proxy
+Content-Type: application/json
+
+{
+  "Assurance": {
+"Interlocuteur":
+	{
+	"nomInter":"SOLERI",
+	"prenomInter":"Mathieu",
+	"telInter":"06.26.26.26.26",
+	"mailInter":"nouveaumathieusoleri@domaine.com"
+	},
+"Client":
+	{
+	"nomCli":"DEAN",
+	"prenomCli":"James",
+	"add1Cli":"Rue des Abeilles",
+	"add2Cli":".",
+	"add3Cli":".",
+	"postalCode":"05400",
+	"placeName":"Châteauneuf-d'Oze",
+	"countryName":"France"
+	},
+"Contrat":
+	{
+	"id_Contr":"11",
+	"nomAssu":"Assurance Auto",
+	"dateContr":"2024-07-16T00:00:00",
+	"dateDebutContr":"2024-08-16T00:00:00"
+	},
+"Echeances":
+	{
+	"valeurMois1":"70",
+	"dateEcheance1":"2024-08-16",
+	"valeurMois2":"70",
+	"dateEcheance2":"2024-09-16",
+	"valeurMois3":"70",
+	"dateEcheance3":"2024-10-16",
+	"valeurMois4":"70",
+	"dateEcheance4":"2024-11-16",
+	"valeurMois5":"70",
+	"dateEcheance5":"2024-12-16",
+	"valeurMois6":"70",
+	"dateEcheance6":"2025-01-16",
+	"valeurMois7":"70",
+	"dateEcheance7":"2025-02-16",
+	"valeurMois8":"70",
+	"dateEcheance8":"2025-03-16",
+	"valeurMois9":"70",
+	"dateEcheance9":"2025-04-16",
+	"valeurMois10":"70",
+	"dateEcheance10":"2025-05-16",
+	"valeurMois11":"70",
+	"dateEcheance11":"2025-06-16",
+	"valeurMois12":"70",
+	"dateEcheance12":"2025-07-16"
+	}
+  }
+}
+
+###
+
+GET {{ApiCreadocs_HostAddress}}/api/identification
+
+###
+
+GET {{ApiCreadocs_HostAddress}}/api/contrat/1009
+
+###
+
+GET {{ApiCreadocs_HostAddress}}/api/contrat?id=0
+
+###
+
+PUT {{ApiCreadocs_HostAddress}}/api/interlocuteur/1013
+Content-Type: application/json
+
+{
+	  "id_inter": 1013,
+    "id_titre": "5",
+    "id_agence": "3",
+    "nomInter": "COLUCHE",
+    "prenomInter": "Michmich",
+    "telInter": "01.02.03.04.05",
+    "mailInter": "mail@modif.com"
+}
+
+###
+
+PUT {{ApiCreadocs_HostAddress}}/api/interlocuteur/1013
+Content-Type: application/json
+
+{
+	"id_inter":1013,
+	"nomInter":"COLUCHE",
+	"prenomInter":"Michel",
+	"id_titre":"6",
+	"id_agence":"2",
+	"mailInter":"mailmailmodifie@modif.com",
+	"telInter":"01"
+}
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/statistiques
+Content-Type: application/json
+
+{
+    "id_agence": 3,
+		"id_inter": 1009
+}
+
+###
+
+POST {{ApiCreadocs_HostAddress}}/api/proxy/proxy
+Content-Type: application/json
+
+{
+  "Assurance": {
+"Interlocuteur":
+	{
+	"nomInter":"SOLERI",
+	"prenomInter":"Mathieu",
+	"telInter":"06.26.26.26.26",
+	"mailInter":"nouveaumathieusoleri@domaine.com"
+	},
+"Client":
+	{
+	"nomCli":"DEAN",
+	"prenomCli":"James",
+	"add1Cli":"Rue des Abeilles",
+	"add2Cli":".",
+	"add3Cli":".",
+	"postalCode":"05400",
+	"placeName":"Châteauneuf-d'Oze",
+	"countryName":"France"
+	},
+"Contrat":
+	{
+	"id_Contr":"11",
+	"nomAssu":"Assurance Auto",
+	"dateContr":"2024-07-16T00:00:00",
+	"dateDebutContr":"2024-08-16T00:00:00"
+	},
+"Echeances":
+	{
+	"valeurMois1":"70",
+	"dateEcheance1":"2024-08-16",
+	"valeurMois2":"70",
+	"dateEcheance2":"2024-09-16",
+	"valeurMois3":"70",
+	"dateEcheance3":"2024-10-16",
+	"valeurMois4":"70",
+	"dateEcheance4":"2024-11-16",
+	"valeurMois5":"70",
+	"dateEcheance5":"2024-12-16",
+	"valeurMois6":"70",
+	"dateEcheance6":"2025-01-16",
+	"valeurMois7":"70",
+	"dateEcheance7":"2025-02-16",
+	"valeurMois8":"70",
+	"dateEcheance8":"2025-03-16",
+	"valeurMois9":"70",
+	"dateEcheance9":"2025-04-16",
+	"valeurMois10":"70",
+	"dateEcheance10":"2025-05-16",
+	"valeurMois11":"70",
+	"dateEcheance11":"2025-06-16",
+	"valeurMois12":"70",
+	"dateEcheance12":"2025-07-16"
+	}
+  }
+}
+###

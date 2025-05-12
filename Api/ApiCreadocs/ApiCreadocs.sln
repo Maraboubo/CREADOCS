@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiCreadocs", "ApiCreadocs.csproj", "{4D458BB6-A5A5-4516-8328-171A8C57A396}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9507A79C-F682-487D-9912-06D2C3A92150}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creadocs.Tests", "..\Tests\Creadocs.Tests\Creadocs.Tests.csproj", "{F8D0A6FE-839C-4996-8048-1D2BCCBEF565}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D458BB6-A5A5-4516-8328-171A8C57A396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D458BB6-A5A5-4516-8328-171A8C57A396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D458BB6-A5A5-4516-8328-171A8C57A396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D458BB6-A5A5-4516-8328-171A8C57A396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D0A6FE-839C-4996-8048-1D2BCCBEF565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D0A6FE-839C-4996-8048-1D2BCCBEF565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D0A6FE-839C-4996-8048-1D2BCCBEF565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D0A6FE-839C-4996-8048-1D2BCCBEF565}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8D0A6FE-839C-4996-8048-1D2BCCBEF565} = {9507A79C-F682-487D-9912-06D2C3A92150}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A3D11DB-6F86-493D-8520-797CACE7767E}
+	EndGlobalSection
+EndGlobal

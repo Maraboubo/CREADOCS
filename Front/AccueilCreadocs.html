@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Accueil créadocs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style/styleCreadocs.css">
+</head>
+<body>
+    <div id="conteneurGlobal" class="conteneurGlobal">
+        <header name="headerGlobal">
+            <div name="headerTitres" class="headerTitres">
+                <div name="logo" class="logo">
+                    <img src="Images/Logo.svg" class="logoTitre"/>
+                </div>
+                <div name="titre" class="titre">
+                    <img  src="Images/Titre.svg" class="logoTitre"/>
+                </div>
+            </div>
+            <div name="headerMenu" class="conteneurMenu">
+                <a id="boutonConnexion" name="BoutonConnexion" class="boutonConnexion cliquable" href="ConnexionCreadocs.html">
+                    <h3 class="texteOngletMenu">Se connecter</h3>
+                </a>
+                <a id="boutonInscription" name="BoutonInscription" class="boutonInscription cliquable" href="InscriptionCreadocs.html">
+                    <h3 class="texteOngletMenu" id="texteOngletInscription">S'inscrire</h3>
+                </a>
+                <div id="boutonUtilConnect" name="BoutonUtilConnect" class="boutonUtilisateurConnecte cliquable" href="">
+                    <h3 class="texteOngletMenu couleurBlanc" id="texteOngletUtilConnect"></h3>
+                </div>
+                <a id="boutonDeconnexion" name="boutonDeconnexion" class="boutonDeconnexion cliquable">
+                    <h3 class="texteOngletMenu" id="texteDeconnexion">Se déconnecter</h3>
+                </a>
+            </div>
+        </header>
+        <main name="zone de travail" class="zoneDeTravail">
+            <a name="interfaceUn" id="interfaceUn" class="interfaces cliquable">
+                <div name="titreAssurance" class="BandeauInterface">
+                    <h3 class="titreInterface">Creer un contrat d'assurance</h3>
+                </div>
+                <img src="Images/assurance.png" class="ImageInterface">
+            </a>
+            <a name="interfaceDeux" id="interfaceDeux" href="AssuranceCreadocs.html" class="interfaces cliquable">
+                <div name="titreSim" class="BandeauInterface">
+                    <h3 class="titreInterface">Creer un contrat de carte SIM</h3>
+                </div>
+                <img src="Images/carteSim.png" class="ImageInterface">
+            </a>
+            <a name="interfaceTrois" id="interfaceTrois" href="AssuranceCreadocs.html" class="interfaces cliquable">
+                <div name="titreCarteBancaire" class="BandeauInterface">
+                    <h3 class="titreInterface">Creer un contrat de carte bancaire</h3>
+                </div>
+                <img src="Images/carteBancaire.png" class="ImageInterface">
+            </a>
+            <a name="interfaceQuatre" id="interfaceQuatre" href="AssuranceCreadocs.html" class="interfaces cliquable">
+                <div name="titreCarteBancaire" class="BandeauInterface">
+                    <h3 class="titreInterface">Creer un contrat de mutuelle</h3>
+                </div>
+                <img src="Images/mutuelle.png" class="ImageInterface">
+            </a>
+            <!--Page espace interlocuteurs-->
+            <div id="intercalaire" class="intercalaire-cache">  
+                <span id="fermer-intercalaire">&times;</span>
+                <div id="divInterlocuteurEspace" class="identiteInterlocuteur">
+                    <h2 id="interlocuteurEspace" class="interlocuteurEspace">Nom Prénom</h2>
+                </div>
+                <div id="menuEspacePerso" class="menuEspacePerso">
+                    <div id="informationsPersonnelles" class="rubriquesMenuEspacePerso cliquable">
+                        <h2 class="titresMenuEspacePerso">Informations personnelles</h2>
+                    </div>
+                    <div id="menuMesContrats" class="rubriquesMenuEspacePerso cliquable">
+                        <h2 class="titresMenuEspacePerso">Mes contrats</h2>
+                    </div>
+                    <div id="menuStatistiques" class="rubriquesMenuEspacePerso cliquable">
+                        <h2 class="titresMenuEspacePerso">Statistiques</h2>
+                    </div>  
+                </div>
+                <!--Rubrique Informations personnelles-->
+                <div id="contenuEspacePerso" class="mainEspacePerso">
+                    <div id="pageInfoPerso">
+                        <h1 class="couleurBleuFort margeSurGauche">Mes informations personnelles.</h1>
+                        <div id="fondInfoPerso">
+                            <div class="petiteMargeBottom">
+                                <h2 class="couleurBleuFort infoPersonnelles">Nom : </h2>
+                                <input id="nomInter" type="text" class="couleurGrisFort infoPersoInter" value="Un nom"/>
+                            </div>
+                            <div class="petiteMargeBottom">
+                                <h2 class="couleurBleuFort infoPersonnelles">Prénom : </h2>
+                                <input id="prenomInter" type="text" class="couleurGrisFort infoPersoInter" value="Un prénom" />
+                            </div>
+                            <div class="petiteMargeBottom">
+                                <h2 class="couleurBleuFort infoPersonnelles">Login : </h2>
+                                <input id="loginInter" type="text" class="couleurGrisFort infoPersoInter italic" value="Modification login prochainement" readonly="readonly"/>
+                            </div>
+                            <div class="petiteMargeBottom">
+                                <h2 class="couleurBleuFort infoPersonnelles">Mot de passe : </h2>
+                                <input id="mdpInter" type="text" class="couleurGrisFort infoPersoInter italic" value="Modification mdp prochainement" readonly="readonly"/>
+                            </div>
+                            <div class="petiteMargeBottom">
+                                <h2 class="couleurBleuFort infoPersonnelles">Titre : </h2>
+                                <select id="id_titre" class="couleurGrisFort infoPersoInter">Une Fonction </select>
+                            </div>
+                            <div class="petiteMargeBottom">
+                                <h2 class="couleurBleuFort infoPersonnelles">Agence : </h2>
+                                <select id="id_agence" class="couleurGrisFort infoPersoInter">Une agence </select>
+                            </div>
+                            <div class="petiteMargeBottom">
+                                <h2 class="couleurBleuFort infoPersonnelles">Email : </h2>
+                                <input id="mailInter" type="email" class="couleurGrisFort infoPersoInter" value="Un email" />
+                            </div>
+                            <div class="petiteMargeBottom">
+                                <h2 class="couleurBleuFort infoPersonnelles">Numéro de téléphone : </h2>
+                                <input id="telInter" type="text" class="couleurGrisFort infoPersoInter" value="Un numéro de téléphone" />
+                            </div>
+                            <button id="boutonModifier">Modifier les informations</button>
+                        </div>
+                    </div>
+                    <!--Rubrique Contrats-->
+                    <div id="pageContrat">
+                        <h1 class="couleurBleuFort margeSurGauche">Mes Contrats.</h1>
+                        <div id="contenu"></div>
+                    </div>
+                    <!--Rubrique Statistiques-->
+                    <div id="pageStatistiques">
+                        <h1 class="couleurBleuFort margeSurGauche">Mes Statistiques.</h1>
+                        <h2 class="fondTitresStats margeSurGauche">Statistiques générales.</h2>
+                        <div class="petiteMargeBottom">
+                            <h2 class="couleurBleuFort statsPersonnelles">Agence qui a passé le plus de contrats : </h2>
+                            <h2 id="agenceMaxContrat" class="couleurGrisFort statsPersoInter"></h2>
+                        </div>
+                        <div class="petiteMargeBottom">
+                            <h2 class="couleurBleuFort statsPersonnelles">Nombre de contrats pour cette agence : </h2>
+                            <h2 id="nbContratAgenceMax" class="couleurGrisFort statsPersoInter"></h2>
+                        </div>
+                        <h2 class="fondTitresStats margeSurGauche">Statistiques pour votre agence.</h2>
+                        <div class="petiteMargeBottom">
+                            <h2 class="couleurBleuFort statsPersonnelles">Nombre de contrats pour votre agence : </h2>
+                            <h2 id="nbContratAgence" class="couleurGrisFort statsPersoInter"></h2>
+                        </div>
+                        <div class="petiteMargeBottom">
+                            <h2 class="couleurBleuFort statsPersonnelles">Valeur totale des contrats d'assurance : </h2>
+                            <h2 id="valeurTotaleContratAssu" class="couleurGrisFort statsPersoInter"></h2>
+                        </div>
+                        <div class="petiteMargeBottom">
+                            <h2 class="couleurBleuFort statsPersonnelles">Meilleur client de l'agence : </h2>
+                            <h2 id="topClientAgence" class="couleurGrisFort statsPersoInter"></h2>
+                        </div>
+                        <div class="petiteMargeBottom">
+                            <h2 class="couleurBleuFort statsPersonnelles">Type de contrat le plus vendu : </h2>
+                            <h2 id="topContratAgence" class="couleurGrisFort statsPersoInter"></h2>
+                        </div>
+                        <div class="petiteMargeBottom">
+                            <h2 class="couleurBleuFort statsPersonnelles">Nombre de vente pour ce type de contrat : </h2>
+                            <h2 id="nbTopContratAgence" class="couleurGrisFort statsPersoInter"></h2>
+                        </div>
+                        <h2 class="fondTitresStats margeSurGauche">Statistiques personnelles.</h2>
+                        <div class="petiteMargeBottom">
+                            <h2 class="couleurBleuFort statsPersonnelles">Nombre de contrat vendus : </h2>
+                            <h2 id="nbContratInter" class="couleurGrisFort statsPersoInter"></h2>
+                        </div>
+                        <div class="petiteMargeBottom">
+                            <h2 class="couleurBleuFort statsPersonnelles">Valeur totale des contrat vendus : </h2>
+                            <h2 id="valTotalContratInter" class="couleurGrisFort statsPersoInter"></h2>
+                        </div>
+                        <div class="petiteMargeBottom">
+                            <h2 class="couleurBleuFort statsPersonnelles">Votre meilleur client : </h2>
+                            <h2 id="topClientInter" class="couleurGrisFort statsPersoInter"></h2>
+                        </div>
+                        <div class="petiteMargeBottom">
+                            <h2 class="couleurBleuFort statsPersonnelles">Nombre de contrats pour ce client : </h2>
+                            <h2 id="nbContrTopCli" class="couleurGrisFort statsPersoInter"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script/accueil.js"></script>
+</body>
+</html>

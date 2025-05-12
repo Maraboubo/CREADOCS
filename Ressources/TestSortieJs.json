@@ -1,0 +1,52 @@
+{
+  "Assurance": {
+    "Interlocuteur": {
+      "nomInter": "Durand",
+      "prenomInter": "Sophie",
+      "telInter": "0123456789",
+      "mailInter": "s.durand@agencenord.com"
+    },
+    "Client": {
+      "nomCli": "DEAN",
+      "prenomCli": "James",
+      "add1Cli": "Rue des Abeilles",
+      "add2Cli": ".",
+      "add3Cli": ".",
+      "postalCode": "05400",
+      "placeName": "Châteauneuf-d'Oze",
+      "countryName": "France"
+    },
+    "Contrat": {
+      "id_Contr": "11",
+      "nomAssu": "Assurance Auto",
+      "dateContr": "2024-07-16T00:00:00",
+      "dateDebutContr": "2024-08-16T00:00:00"
+    },
+    "Echeances": {
+      "valeurMois1": "70",
+      "dateEcheance1": "2024-08-16",
+      "valeurMois2": "70",
+      "dateEcheance2": "2024-09-16",
+      "valeurMois3": "70",
+      "dateEcheance3": "2024-10-16",
+      "valeurMois4": "70",
+      "dateEcheance4": "2024-11-16",
+      "valeurMois5": "70",
+      "dateEcheance5": "2024-12-16",
+      "valeurMois6": "70",
+      "dateEcheance6": "2025-01-16",
+      "valeurMois7": "70",
+      "dateEcheance7": "2025-02-16",
+      "valeurMois8": "70",
+      "dateEcheance8": "2025-03-16",
+      "valeurMois9": "70",
+      "dateEcheance9": "2025-04-16",
+      "valeurMois10": "70",
+      "dateEcheance10": "2025-05-16",
+      "valeurMois11": "70",
+      "dateEcheance11": "2025-06-16",
+      "valeurMois12": "70",
+      "dateEcheance12": "2025-07-16"
+    }
+  }
+}

@@ -1,0 +1,812 @@
+﻿body
+{
+    margin:0;
+    background-color:black;
+}
+h1 {
+    font-family: "Roboto", bold;
+    color: white;
+    font-size: 36pt;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+}
+
+h3 {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 17pt;
+    margin:0 0 0 0;
+}
+
+h4 {
+    font-family: "Roboto", bold;
+    font-size: 16px;
+    font-weight: normal;
+    color: #a7a7a7;
+}
+
+h5 {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: bolder;
+    margin:0
+}
+
+h6 {
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+a {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+li {
+    margin-top: 3%;
+}
+
+.conteneurGlobal {
+    width: 96%;
+    height: 100vh;
+    background-color: #ffffff;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+header {
+    height: 40%;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #E10018;
+}
+
+.headerTitres {
+    height: 75%;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.logo {
+    height: 36%;
+    width: 39%;
+    float: left;
+    position: relative;
+    top: 42%;
+    left: 7%;
+}
+
+.logoTitre {
+    height: 100%;
+    width: 100%;
+}
+
+.titre {
+    height: 31%;
+    width: 29%;
+    position: relative;
+    top: 47%;
+    right: 19%;
+    float: right;
+}
+
+.boutonConnexion {
+    position: relative;
+    height: 50%;
+    width: 14%;
+    float: left;
+    background-color: white;
+    top: 50%;
+    left: 7%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: height 0.5s, top 0.5s;
+}
+
+.boutonConnexion:hover{
+    height: 75%;
+    top: 25%;
+}
+
+.boutonInscription {
+    position: relative;
+    height: 50%;
+    width: 14%;
+    float: right;
+    background-color: #777777;
+    top: 50%;
+    right: 64.6%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: height 0.5s, top 0.5s;
+}
+
+.boutonInscription:hover {
+    height: 75%;
+    top: 25%;
+}
+
+.boutonUtilisateurConnecte {
+    position: relative;
+    height: 75%;
+    width: 14%;
+    float: left;
+    background-color: #023A5B;
+    top: 25%;
+    left: 7%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.boutonDeconnexion {
+    position: relative;
+    height: 50%;
+    width: 14%;
+    float: left;
+    background-color: white;
+    top: 50%;
+    left: 7%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 6px;
+}
+
+.boutonUtilisateur {
+    position: relative;
+    height: 75%;
+    width: 14%;
+    float: right;
+    background-color: white;
+    top: 25%;
+    right: 7%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: height 0.5s, top 0.5s;
+}
+
+.boutonRetourAccueil {
+    position: relative;
+    height: 50%;
+    width: 14%;
+    float: right;
+    background-color: #A7A7A7;
+    top: 50%;
+    right: 7%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: height 0.5s, background-color 0.5s, top 0.5s;
+    margin-right: 10px;
+}
+
+    .boutonRetourAccueil:hover {
+        height: 75%;
+        float: right;
+        background-color: #E10018;
+        top: 25%;
+    }
+
+#boutonUtilisateur{
+    background-color:#36B4EE;
+}
+
+.texteOngletMenu {
+    position:relative;
+    height:100%;
+    text-align: center;
+    display:block;
+    color:#777777;
+    padding-top:4%;
+}
+
+#texteOngletInscription{
+    color:white;
+}
+
+.conteneurMenu {
+    height: 25%;
+    width: 100%;
+    background-color: #E30018;
+}
+
+.zoneDeTravail {
+    height: 60%;
+    width: 100%;
+    background-color: white;
+}
+
+.bandeauInterfaces {
+    position:relative;
+    height:50%;
+    width:100%;
+    background-color:sandybrown;
+    top:25%;    
+}
+
+.interfaces {
+    position: relative;
+    height: 304px;
+    width: 253px;
+    background-color: #777777;
+    margin: 0% 0% 0% 7%;
+    display: inline-block;
+    top: 25%;
+    float: left;
+    border: 2px solid;
+    border-color: #A7A7A7;
+    border-radius: 10px;
+    filter: drop-shadow(0px 2px 2px #A7A7A7);
+    transition: top 0.5s, filter 0.5s;
+}
+
+.interfaces:hover{
+    top: 20%;
+    filter: drop-shadow(0px 2px 10px #A7A7A7);
+}
+
+.BandeauInterface {
+    height: 82px;
+    width: 253px;
+    background-color: #777777;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom:2px solid;
+    border-color:#A7A7A7;
+}
+
+.ImageInterface {
+    width: 253px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.titreInterface {
+    color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    position: absolute;
+}
+
+/*
+    STYLE INSCRIPTION
+*/
+#conteneurInscription {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+#headerInscription {
+    display: block;
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: #E10018;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.mainInscription {
+
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    width: 100%;
+    background-color: white;
+}
+
+.mainConnexion {
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    width: 100%;
+    background: white;
+}
+
+#logo {
+    position: relative;
+    height: 80%;
+    margin-left: 2%;
+    top: 4%;
+}
+
+.conteneurCentral {
+    width: 30%;
+    background-color: white;
+    margin: 5% auto auto auto;
+}
+
+.conteneurCentralConnexion {
+    width: 30%;
+    background: #D9D9D9;
+    border-radius: 20px;
+    margin: 5% auto auto auto;
+}
+/*
+    STYLE INSCRIPTION
+*/
+
+#headerAssurance {
+    display: block;
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: #023A5B;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.champTexte {
+    width: 100%;
+}
+
+.champTexteConnection {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boutonSuivant {
+    padding: 5px;
+    border: none;
+    background-color: #E10018;
+    width: 100%;
+    border-radius: 20px;
+    margin: 12% auto auto auto;
+    font-size: 10pt;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: font-size 0.2s, padding 0.2s;
+    color:white;
+}
+
+    .boutonSuivant:hover {
+        font-size: 12pt;
+        padding: 6px;
+    }
+.boutonSuivantAssur {
+    margin: 5% auto 5% auto;
+    background-color: #023A5B;
+}
+
+.boutonSuivantConnection {
+    display: block;
+    padding: 5px;
+    border: none;
+    background-color: #E10018;
+    width: 92%;
+    border-radius: 20px;
+    margin: 12% auto auto auto;
+    font-size: 10pt;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: font-size 0.2s, padding 0.2s;
+    color:white;
+}
+
+    .boutonSuivantConnection:hover {
+        font-size: 12pt;
+        padding: 6px;
+    }
+
+.fieldset {
+    color: #a7a7a7;
+    margin: 30px auto 20px auto;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 85%;
+}
+
+.fieldsetInscription {
+    color: #a7a7a7;
+    margin: 30px auto 2px 5px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 100%%;
+}
+
+.legend {
+    color: #a7a7a7;
+    font-family: roboto;
+    font-size: 10pt;
+    font-weight: bolder;
+    text-align: center;
+    width: 25%;
+}
+
+.lignesFormulaires {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.titresChampsFormulaires {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.champsFormulaires {
+    border-radius: 2px;
+    border: 1px solid;
+    flex: 1;
+}
+
+.paragraphe {
+    color: #a7a7a7;
+    font-family: roboto;
+    font-size: 10pt;
+    font-weight: bolder;
+    text-align: center;
+    margin:0;
+}
+
+.paragrapheWhite {
+    text-decoration-line: none;
+    display: block;
+    color: #E10018;
+    font-family: roboto;
+    font-size: 10pt;
+    font-weight: bolder;
+    text-align: center;
+    margin:5px 0 0 0;
+}
+
+.retour {
+    margin-top: 10%;
+    color: #1ED760;
+    float: right;
+}
+
+.point {
+    font-size: 100pt;
+}
+
+.elementsListe {
+    margin: 10px auto 10px 0px;
+    color: #777777;
+    font-family: roboto;
+    font-weight: bolder;
+}
+
+.cliquable {
+    cursor: pointer;
+    text-decoration:none;
+}
+
+/*
+    PLACEMENT
+*/
+.textePlus {
+    font-size: 1.3em;
+    transition: font-size 0.2s;
+}
+
+    .textePlus:hover {
+        font-size: 1.4em;
+    }
+
+.niveauH4 {
+    border: none;
+    font-weight: bolder;
+    margin: 20px auto 20px 0px;
+    border-radius: 5px;
+}
+
+.niveauH2 {
+    margin: 0;
+}
+
+.centreTexte {
+    text-align: center;
+}
+
+.paddingTop {
+    padding-top: 30px;
+}
+
+.noMargin{
+    margin:0;
+}
+
+.margeFinDePage {
+    margin-bottom: 100px;
+}
+
+.margeSurGauche{
+    margin-left: 30px;
+}
+
+.petiteMargeBottom {
+    margin: 0 0 10px 0;
+}
+
+/*
+    COULEURS
+*/
+
+.couleurBlanc{
+    color:white;
+}
+
+.couleurGrisFort {
+    color: #777777;
+}
+
+.couleurGrisMedium {
+    color: #A7A7A7;
+}
+
+.couleurBleuFort{
+    color: #023A5B;
+}
+
+.couleurBleuMedium {
+    color: #36B4EE;
+}
+
+.couleurRouge {
+    color: #E10018;
+}
+/*
+    STYLES DE TEXTE
+*/
+.italic{
+    font-style:italic;
+}
+
+/*
+    Style Page Interlocuteurs
+*/
+
+#intercalaire {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+    #intercalaire::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px 10px 0 0;
+    }
+
+.intercalaire-contenu {
+    padding: 0px;
+}
+
+#fermer-intercalaire {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.intercalaire-cache {
+    display: none;
+}
+
+.mainEspacePerso {
+    position: absolute;
+    height: 75%;
+    width: 98%;
+    overflow-y: scroll;
+    border: solid, 4px, #A7A7A7;
+    border-radius: 0 15px 15px 20px;
+}
+
+.menuEspacePerso {
+    width: 100%;
+    height: 10%;
+    padding: 0;
+}
+
+.titresMenuEspacePerso {
+    margin: 2% 0 2% 0;
+}
+
+.rubriquesMenuEspacePerso {
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #A7A7A7;
+    border-radius: 20px 20px 0 0;
+    height: 50%;
+    position: sticky;
+    top: 50%;
+    transition: height 0.2s, top 0.2s, background-color 0.2s;
+}
+    .rubriquesMenuEspacePerso:hover,
+    .rubriquesMenuEspacePerso.active {
+        height: 75%;
+        top: 25%;
+        background-color: #E10018;
+    }
+
+
+.identiteInterlocuteur {
+    height: 10%;
+}
+
+.interlocuteurEspace {
+    margin: 20px 0 0 20px;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    background-color: #023A5B;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/*
+    Style de l'iframe
+*/
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+iframe {
+    width: 68%;
+    height: 100%;
+    border: none;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+}
+.contract-row {
+    margin: 0 0 20px 30px;
+    background-color: rgba(167, 167, 167, 0.7);
+    width: 90%;
+    padding: 10px 0 10px 10px;
+    border-radius: 10px;
+}
+.ligneInfoDocument {
+    margin: 0 0 5px 10px;
+    font-size: medium;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 500;
+}
+.boutonDocument {
+    margin: 0 0 0 200px;
+    background-color: #E10018;
+    width: 150px;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}
+
+/*
+    Page Interlocuteur Infos personnelles
+*/
+
+.infoPersonnelles {
+    display: inline;
+    margin: 0 0 20px 0;
+}
+
+.infoPersoInter {
+    display: inline;
+    margin: 0 0 20px 0;
+    left: 380px;
+    position: absolute;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: xx-large;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 700px;
+}
+
+#boutonModifier {
+    margin: 50px 0 50px 0;
+    height: 50px;
+    width: 200px;
+    border: none;
+    background-color: #E10018;
+    border-radius: 20px;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#fondInfoPerso {
+    margin: 0 0 20px 30px;
+    background-color: rgba(167, 167, 167, 0.7);
+    width: 90%;
+    padding: 10px 0 10px 10px;
+    border-radius: 10px;
+}
+/*
+    Page Interlocuteur Infos personnelles
+*/
+.statsPersonnelles {
+    display: inline;
+    margin: 0 0 20px 30px;
+}
+
+.statsPersoInter {
+    display: inline;
+    margin: 0 0 20px 300px;
+    left: 380px;
+    position: absolute;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: xx-large;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.fondTitresStats {
+    background-color: #023A5B;
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+/*
+    Test Scrollbar
+*/
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #E10018;
+    border-radius: 10px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #b30000;
+    }

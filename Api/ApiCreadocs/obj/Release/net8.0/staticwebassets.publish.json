@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "Zyais2WQcwidJmLBMOLli46vqqo7yXwJUo+H/YP8ZwU=",
+  "Source": "ApiCreadocs",
+  "BasePath": "_content/ApiCreadocs",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ApiCreadocs\\wwwroot",
+      "Source": "ApiCreadocs",
+      "ContentRoot": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\wwwroot\\",
+      "BasePath": "_content/ApiCreadocs",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
