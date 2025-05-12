@@ -1,0 +1,12 @@
+# Ignorer le fichier de configuration contenant la chaîne de connexion
+Api/ApiCreadocs/appsettings.json
+
+# Ignorer les fichiers spécifiques au service externe
+Api/ApiCreadocs/Controllers/ProxyController.cs
+
+# (Facultatif) Ignorer les fichiers générés automatiquement ou inutiles
+bin/
+obj/
+*.user
+*.suo
+*.log

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\ApiCreadocs.csproj": {}
+    "C:\\Users\\mathi\\source\\repository2024\\ProjetCREADOCS\\Api\\ApiCreadocs\\ApiCreadocs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\ApiCreadocs.csproj": {
+    "C:\\Users\\mathi\\source\\repository2024\\ProjetCREADOCS\\Api\\ApiCreadocs\\ApiCreadocs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\ApiCreadocs.csproj",
+        "projectUniqueName": "C:\\Users\\mathi\\source\\repository2024\\ProjetCREADOCS\\Api\\ApiCreadocs\\ApiCreadocs.csproj",
         "projectName": "ApiCreadocs",
-        "projectPath": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\ApiCreadocs.csproj",
+        "projectPath": "C:\\Users\\mathi\\source\\repository2024\\ProjetCREADOCS\\Api\\ApiCreadocs\\ApiCreadocs.csproj",
         "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mathi\\source\\repos\\ProjetCREADOCS\\Api\\ApiCreadocs\\obj\\",
+        "outputPath": "C:\\Users\\mathi\\source\\repository2024\\ProjetCREADOCS\\Api\\ApiCreadocs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mathi\\AppData\\Roaming\\NuGet\\NuGet.Config",

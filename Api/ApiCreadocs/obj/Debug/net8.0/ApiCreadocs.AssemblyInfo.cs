@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiCreadocs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10a77afb93eb9fbca5d2b7067c796fab4ac850f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+718ce5fe65728fe7a87d26d3fa2145cd9f6b8aa3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiCreadocs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiCreadocs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
